@@ -39,9 +39,9 @@ $php_version = phpversion();
 $j_s_text = "";
 if (strpos($section, "step") === FALSE) {
 	if ((isset($judge_limit)) && (isset($steward_limit))) {
-		if (($judge_limit) && (!$steward_limit)) $j_s_text = "Steward"; // missing punctuation intentional
+		if (($judge_limit) && (!$steward_limit)) $j_s_text = "Bénévole"; // missing punctuation intentional
 		elseif ((!$judge_limit) && ($steward_limit)) $j_s_text = "Juge"; // missing punctuation intentional
-		else $j_s_text = "Judge ou steward"; // missing punctuation intentional
+		else $j_s_text = "Juge ou bénévole"; // missing punctuation intentional
 	}
 }
 
@@ -712,7 +712,7 @@ if ($section == "default") {
 	$reg_open_text_006 = "Comme vous êtes déjà enregistré vous pouvez";
 	$reg_open_text_007 = "vérifier vos infos de compte";
 	$reg_open_text_008 = "afin de vérifier si vous souhaitez être juge et/ou bénévole";
-	$reg_open_text_009 = "Si vous souhaitez être juge ou bénévole, merci de retourner vous enregistrer";
+	$reg_open_text_009 = "Si vous souhaitez être juge ou bénévole, merci de revenir vous enregistrer à partir du";
 	$reg_open_text_010 = "Les inscriptions pour les bières sont";
 	$reg_open_text_011 = "Pour participer";
 	$reg_open_text_012 = "merci de vous enregistrer";
