@@ -700,7 +700,7 @@ if ($section == "default") {
 	$default_page_text_019 = "Téléchargez les gagnants 'Best of Show' au format HTML";
 	$default_page_text_020 = "Téléchargez les gagnants au format PDF.";
 	$default_page_text_021 = "Téléchargez les gagnants au format HTML.";
-	$default_page_text_022 = "Merci de votre intérêt manifeste pour les";
+	$default_page_text_022 = "Merci de votre intérêt pour le";
 	$default_page_text_023 = "organisé par";
 
 	$reg_open_text_000 = "L'inscription des juges et bénévoles est";
