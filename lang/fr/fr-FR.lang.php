@@ -1,94 +1,9 @@
 <?php
 /**
- * Module:      en-US.lang.php
- * Description: This module houses all display text in the English language.
+ * Module:      fr-FR.lang.php
+ * Description: This module houses all display text in french language.
  *
  */
-
-/*
-
---------------------------------------------------------------------------------------------------
-
-To translate this file, first make a copy of it and rename it with the language name in the title.
-
-==============================
-
-Use ISO 169-2 Standards for and WWW3C Language Tag Standards for naming of language files. Use the
-ALPHA-2 letter code whenever possible.
-
-ISO 169-2:
-https://www.loc.gov/standards/iso639-2/php/code_list.php
-
-WWW3 Language Tags:
-https://www.w3.org/International/articles/language-tags/
-
-WWW3 Choosing a Language Tag:
-https://www.w3.org/International/questions/qa-choosing-language-tags
-
-To determine a subtag, go to the IANA Language Subtag Registry:
-http://www.iana.org/assignments/language-subtag-registry
-
-According to the WWW3:
-
-"Always bear in mind that the golden rule is to keep your language tag as short as possible. Only
-add further subtags to your language tag *if they are needed to distinguish the language from
-something else in the context where your content is used..."
-
-"Unless you specifically need to highlight that you are talking about Italian as spoken in Italy
-you should use it 'for Italian, and not it-IT. The same goes for any other possible combination."
-
-"You should only use a region subtag if it contributes information needed in a particular context
-to distinguish this language tag from another one; otherwise leave it out."
-
-================ FORMAT =================
-
-Always indicate the primary languge subtag first, then a dash (-) and then the region subtag. The
-region subtag is in all capital letters or a three digit number.
-
-Examples:
-en-US
-English spoken in the United States
-en is the PRIMARY language subtag
-US is the REGION subtag (note the capitalization)
-
-es-ES
-Spanish spoken in Spain
-
-es-419
-Spanish spoken in Latin America
-
-========================================
-
-Items that need translation into other languages are housed here in PHP variables - each start with
-a dollar sign ($). The words, phrases, etc. (called strings) that need to be translated are housed
-between double-quotes ("). Please, ONLY alter the text between the double quotes!
-
-For example, a translated PHP variable would look like this (encoding is utf8mb4; therefore, accented and other special characters are acceptable):
-
-English (US) before translation:
-$label_volunteer_info = "Volunteer Info";
-
-Spanish translated:
-$label_volunteer_info = "Información de Voluntarios";
-
-Portuguese translated:
-$label_volunteer_info = "Informações Voluntário";
-
-========================================
-
-Please note: the strings that need to be translated MAY contain HTML code. Please leave this code intact! For example:
-
-English (US):
-$beerxml_text_008 = "Browse for your BeerXML compliant file on your hard drive and click <em>Upload</em>.";
-
-Spanish:
-$beerxml_text_008 = "Buscar su archivo compatible BeerXML en su disco duro y haga clic en <em>Cargar</em>.";
-
-Note that the <em>...</em> tags were not altered. Just the word "Upload" to "Cargar" betewen those tags.
-
-==============================
-
-*/
 
 include (INCLUDES.'url_variables.inc.php');
 
@@ -125,8 +40,8 @@ $j_s_text = "";
 if (strpos($section, "step") === FALSE) {
 	if ((isset($judge_limit)) && (isset($steward_limit))) {
 		if (($judge_limit) && (!$steward_limit)) $j_s_text = "Steward"; // missing punctuation intentional
-		elseif ((!$judge_limit) && ($steward_limit)) $j_s_text = "Judge"; // missing punctuation intentional
-		else $j_s_text = "Judge or steward"; // missing punctuation intentional
+		elseif ((!$judge_limit) && ($steward_limit)) $j_s_text = "Juge"; // missing punctuation intentional
+		else $j_s_text = "Judge ou steward"; // missing punctuation intentional
 	}
 }
 
@@ -148,7 +63,7 @@ $label_low_none = "Peu/Aucun";
 $label_low = "Bas";
 $label_med = "Moyen";
 $label_high = "Elevé";
-$label_pay = "Paiement droits d'entrée";
+$label_pay = "Paiement des droits d'entrée";
 $label_reset_password = "Réinitialiser le mot de passe";
 $label_log_in = "Connexion";
 $label_logged_in = "Connecté";
@@ -156,7 +71,7 @@ $label_log_out = "Déconnexion";
 $label_logged_out = "Déconnecté";
 $label_sponsors = "Partenaires";
 $label_rules = "Règles";
-$label_volunteer_info = "Info Bénévoles";
+$label_volunteer_info = "Info bénévoles";
 $label_reg = $label_register;
 $label_judge_reg = "Enregistrement des juges";
 $label_steward_reg = "Enregistrement des bénévoles";
@@ -200,7 +115,7 @@ $label_brewer_specifics = "Spécificités selon le brasseur";
 $label_general = "General";
 $label_amount_brewed = "Quantité brassée";
 $label_specific_gravity = "Densité spécifique";
-$label_fermentables = "Fermentiscibles";
+$label_fermentables = "Fermentescibles";
 $label_malt_extract = "Extrait de malt";
 $label_grain = "Grain";
 $label_hops = "Houblons";
@@ -214,7 +129,7 @@ $label_time = "Temps";
 $label_first_wort = "First Wort";
 $label_boil = "Ebullition";
 $label_aroma = "Arome";
-$label_dry_hop = "Dry Hop";
+$label_dry_hop = "Houblonnage à cru";
 $label_type = "Type";
 $label_bittering = "Amérisant";
 $label_both = "Les deux";
@@ -225,7 +140,7 @@ $label_plug = "Prise";
 $label_extract = "Extrait";
 $label_date = "Date";
 $label_bottled = "Embouteillée";
-$label_misc = "Miscellanée";
+$label_misc = "Divers";
 $label_minutes = "Minutes";
 $label_hours = "Heures";
 $label_step = "Etape";
@@ -249,7 +164,7 @@ $label_primary = "Primaire";
 $label_secondary = "Secondaire";
 $label_days = "Jours";
 $label_forced = "Carbonatation forcée";
-$label_bottle_cond = "Conditionné en bouteille";
+$label_bottle_cond = "Conditionnée en bouteille";
 $label_volume = "Volume";
 $label_og = "Densité initiale";
 $label_fg = "Densité finale";
@@ -261,12 +176,12 @@ $label_box_number = "Box Number";
 $label_first_name = "Prénom";
 $label_last_name = "Nom de famille";
 $label_secret_01 = "Quelle est votre bière préférée";
-$label_secret_02 = "Quel état le nom de votre premier animal de compagnie?";
-$label_secret_03 = "Quel était le nom de la rue ou vous avez grandi?";
-$label_secret_04 = "Quel est votre équipe préférée?";
+$label_secret_02 = "Quel était le nom de votre premier animal de compagnie ?";
+$label_secret_03 = "Quel était le nom de la rue où vous avez grandi ?";
+$label_secret_04 = "Quel est votre équipe de sport préférée ?";
 $label_security_answer = "Réponse à la question de sécurité";
 $label_security_question = "Question de sécurité";
-$label_judging = "Judging";
+$label_judging = "Juger";
 $label_judge = "Juge";
 $label_steward = "Bénévole";
 $label_account_info = "Informations du compte";
@@ -290,9 +205,9 @@ $label_judging_avail = "Disponibilité de la session de jugement";
 $label_stewarding = "Bénévolat";
 $label_stewarding_avail = "Disponibilité des bénévoles";
 $label_bjcp_id = "BJCP ID";
-$label_bjcp_mead = "Juge d hydromels";
+$label_bjcp_mead = "Juge d'hydromels";
 $label_bjcp_rank = "Classement BJCP";
-$label_designations = "Designations";
+$label_designations = "Appellation";
 $label_judge_sensory = "Juge avec entrainement des sens";
 $label_judge_pro = "Brasseur professionnel";
 $label_judge_comps = "Competitions jugées";
@@ -309,7 +224,7 @@ $label_updated = "Mis à jour";
 $label_mini_bos = "Mini-BOS";
 $label_actions = "Actions";
 $label_score = "Score";
-$label_winner = "Gagnant?";
+$label_winner = "Gagnant ?";
 $label_change_email = "Changer Email";
 $label_change_password = "Changer mot de passe";
 $label_add_beerXML = "Ajouter une entrée en utilisant BeerXML";
@@ -318,24 +233,24 @@ $label_none = "Aucune";
 $label_discount = "Remise";
 $label_subject = "Sujet";
 $label_message = "Message";
-$label_send_message = "Envoyer Message";
+$label_send_message = "Envoyer le message";
 $label_email = "Adresse email";
 $label_account_registration = "Enregistrement des comptes utilisateurs:";
 $label_entry_registration = "Enregistrement des entrées (vos bières):";
-$label_entry_fees = "Tarifs des entrées";
-$label_entry_limit = "Limite d entrées";
+$label_entry_fees = "Tarif des entrées";
+$label_entry_limit = "Limite d'entrées";
 $label_entry_info = "Infos des entrées";
 $label_entry_per_entrant = "Limites du participant";
 $label_categories_accepted = "Styles acceptés";
 $label_judging_categories = "Catégories jugées";
 $label_entry_acceptance_rules = "Règles d'admission des entrées et formats souhaités";
-$label_shipping_info = "Infos d expéditions";
+$label_shipping_info = "Infos sur les expéditions";
 $label_packing_shipping = "Emballage et expédition";
 $label_awards = "Prix";
 $label_awards_ceremony = "Cérémonie de remise des prix";
 $label_circuit = "Qualifications";
 $label_hosted = "Editions accueillies";
-$label_entry_check_in = "Check-in des entrées";
+$label_entry_check_in = "Reception des entrées";
 $label_cash = "Cash";
 $label_check = "Check";
 $label_pay_online = "Payer en ligne";
@@ -343,22 +258,22 @@ $label_cancel = "Annuler";
 $label_understand = "Je comprends";
 $label_fee_discount = "Tarification réduite";
 $label_discount_code = "Code de réduction";
-$label_register_judge = "Vous vous inscrivez comme participants, bénévole ou juge ?";
+$label_register_judge = "Vous vous inscrivez comme participant, bénévole ou juge ?";
 $label_register_judge_standard = "Inscrire un juge ou un bénévole (Standard)";
 $label_register_judge_quick = "Inscrire un juge ou un bénévole (Rapide)";
 $label_all_participants = "Tous les participants";
 $label_open = "Ouvert";
-$label_closed = "Closes";
+$label_closed = "Terminées";
 $label_judging_loc = "Lieu et date du concours";
 $label_new = "Nouveau";
 $label_old = "Ancien";
-$label_sure = "Etes vous sur?";
+$label_sure = "Etes vous sûr ?";
 $label_judges = "Juges";
 $label_stewards = "Bénévoles";
-$label_staff = "Staff";
+$label_staff = "Organisateurs";
 $label_category = "Categorie";
 $label_delete = "Effacer";
-$label_undone = "Ceci ne peut pas être défait";
+$label_undone = "Ceci ne peut pas être annulé";
 $label_bitterness = "Amertume";
 $label_close = "Terminée";
 $label_custom_style = "Style usuel";
@@ -383,10 +298,10 @@ $label_signature = "Signature";
 $label_assignment = "Affectation";
 $label_assignments = "Affectations";
 $label_letter = "Lettre";
-$label_re_enter = "Re-Enter";
+$label_re_enter = "Re-Entrer";
 $label_website = "Site web";
 $label_place = "Place";
-$label_cheers = "Cheers";
+$label_cheers = "A la votre";
 $label_count = "Compte";
 $label_total = "Total";
 $label_participant = "Participant";
@@ -397,22 +312,22 @@ $label_pull_order = "Ordre de passage";
 $label_box = "Box";
 $label_sorted = "Trié";
 $label_subcategory = "Sous catégorie";
-$label_affixed = "Label apposé?";
+$label_affixed = "Label apposé ?";
 $label_points = "Points";
 $label_comp_id = "Identifiant de competition BJCP";
 $label_days = "Jours";
 $label_sessions = "Sessions";
 $label_number = "Nombre";
-$label_more_info = "Plus d infos";
-$label_entry_instructions = "Instructions dentrée";
+$label_more_info = "Plus d'infos";
+$label_entry_instructions = "Instructions d'entrée";
 $label_commercial_examples = "Exemples commerciaux";
 $label_users = "Utilisateurs";
 $label_participants = "Participants";
 $label_please_confirm = "Confirmez svp";
-$label_undone = "Ceci ne peut pas être défait.";
+$label_undone = "Ceci ne peut pas être annulé.";
 $label_data_retain = "Données à retenir";
 $label_comp_portal = "Directoire de la competition";
-$label_comp = "Competition";
+$label_comp = "Concours";
 $label_continue = "Continuez";
 $label_host = "Hote";
 $label_closing_soon = "Fermeture imminente";
@@ -475,7 +390,7 @@ $label_entry_number = "Numéro de l'entrée";
 $header_text_000 = "L'installation est un succès.";
 $header_text_001 = "Vous êtes connecté et prêt pour personnaliser le site de votre compétition";
 $header_text_002 = "Toutefois, vos droits sur le fichier de permissions config.php ne pouvaient pas être changés";
-$header_text_003 = "Il est recommandé que vous changiez les permsissions du serveur (chmod) du fichier config.php en 555. Pour faire ceci vous aurez besoin d'acceder au fichier sur votre serveur";
+$header_text_003 = "Il est recommandé que vous changiez les permissions du serveur (chmod) du fichier config.php en 555. Pour faire ceci vous aurez besoin d'acceder au fichier sur votre serveur";
 $header_text_004 = "D'habitude la variable &#36;setup_free_access dans config.php est couramment réglée sur TRUE. Pour des raisons de sécurité ce réglage devrait être sur FALSE. Vous aurez besoin d'éditer config.php directement et de le re-télécharger sur votre serveur pour effectuer cette action.";
 $header_text_005 = "Informations rajoutées avec succès.";
 $header_text_006 = "Informations éditées avec succès.";
@@ -485,71 +400,71 @@ $header_text_009 = "Vous devez être un administrateur pour accèder aux fonctio
 $header_text_010 = "Changer";
 $header_text_011 = $label_email;
 $header_text_012 = $label_password;
-$header_text_013 = "L'adresse mail fournie est déjà utilisée, svp proposez en une autre";
-$header_text_014 = "Il y a eu un souci avec votre dernière requête, svp essayez encore";
+$header_text_013 = "L'adresse mail fournie est déjà utilisée, merci d'en utiliser une autre";
+$header_text_014 = "Il y a eu un souci avec votre dernière requête, merci d'essayer à nouveau";
 $header_text_015 = "Votre mot de passe actuel est incorrect.";
-$header_text_016 = "SVP veuillez fournir une adresse mail.";
+$header_text_016 = "Merci de fournir une adresse mail.";
 $header_text_017 = "Désolé, il y a eu un problème avec votre dernière tentative de connexion.";
 $header_text_018 = "Désolé, le nom d'utilisateur que vous avez entré est déjà utilisé.";
-$header_text_019 = "Peut-être avez-vous déjà créé un compte?";
+$header_text_019 = "Peut-être avez-vous déjà créé un compte ?";
 $header_text_020 = "Si oui connectez vous ici.";
 $header_text_021 = "Le nom d'utilisateur fourni n'est pas une adresse mail valide.";
-$header_text_022 = "SVP entrez une adresse mail valide.";
-$header_text_023 = "Le CAPTCHA fut un échec.";
+$header_text_022 = "Merci d'entrer une adresse mail valide.";
+$header_text_023 = "Le captcha n'est pas le bon.";
 $header_text_024 = "Les adresses mail que vous avez rentré ne concordent pas.";
 $header_text_025 = "Le numéro AHA que vous avez entré est déjà dans le système.";
-$header_text_026 = "Votre paiement en ligne a été reçu et la transaction est complète.SVP attendez quelques minutes pour que le statut du paiement soit mis à jour ici - n'hésitez pas à actualiser cette page ou d'accèder à vos entrées. Vous recevrez un reçu de paiement par mail de la part de Paypal.";
-$header_text_027 = "SVP assurez vous d'imprimer le reçu et de l'attacher à l'une de vos bouteilles comme preuve de paiement.";
+$header_text_026 = "Votre paiement en ligne a été reçu et la transaction est complète. Merci de patienter quelques minutes pour que le statut du paiement soit mis à jour ici - n'hésitez pas à actualiser cette page ou à accèder à vos entrées. Vous recevrez un reçu de paiement par mail de la part de Paypal.";
+$header_text_027 = "Merci de vous assurer d'imprimer le reçu et de l'attacher à l'une de vos bouteilles comme preuve de paiement.";
 $header_text_028 = "Votre paiement en ligne a été annulé.";
 $header_text_029 = "Le code a été vérifié.";
 $header_text_030 = "Désolé, le code que vous avez entré est incorrect.";
 $header_text_031 = "Vous devez vous connecter et bénéficier des droits d'admin pour acceder aux fonctions d'admin.";
 $header_text_032 = "Désolé il y a eu un souci avec votre dernière tentative de connexion.";
-$header_text_033 = "SVP assurez vous que votre adresse mail et votre mot de passe sont corrects.";
-$header_text_034 = "Un token de réinitialisation de mot de passe a été généré et mailé à l'adresse mail associée à votre compte.";
-$header_text_035 = "- vous pouvez désormais vous connecter en utilisant votre pseudo et le nouveau mot de passe.";
+$header_text_033 = "Assurez vous que votre adresse mail et votre mot de passe sont corrects.";
+$header_text_034 = "Un token de réinitialisation de mot de passe a été généré et envoyé par mail à l'adresse associée à votre compte.";
+$header_text_035 = "- vous pouvez désormais vous connecter en utilisant votre pseudo et nouveau mot de passe.";
 $header_text_036 = "Vous avez été déconnecté.";
-$header_text_037 = "Voulez vous vous reconnecter?";
-$header_text_038 = "Votre question de sécurité ne correspond pas à celle qu'il y a dans la base de données.";
+$header_text_037 = "Voulez vous vous reconnecter ?";
+$header_text_038 = "Votre question de sécurité ne correspond pas à celle présente dans la base de données.";
 $header_text_039 = "Vos informations de vérification ont été envoyées à l'adresse mail associé avec votre compte.";
 $header_text_040 = "Votre message a été envoyé à";
 $header_text_041 = $header_text_023;
 $header_text_042 = "Votre adresse mail a été mise à jour.";
 $header_text_043 = "Votre mot de passe a été mis à jour.";
 $header_text_044 = "Informations effacées avec succès.";
-$header_text_045 = "Vous devriez vérifier toutes voes entrées importées en vous servant de BeerXML.";
+$header_text_045 = "Vous devriez vérifier toutes vos entrées importées en tant que BeerXML.";
 $header_text_046 = "Vous êtes enregistré.";
 $header_text_047 = "Vous avez atteint la limite du nombre d'entrées.";
 $header_text_048 = "Votre entrée n'a pas été ajoutée.";
 $header_text_049 = "Vous avez atteint la limite d'entrées pour cette sous catégorie.";
-$header_text_050 = "Set Up: Installer les tables de la base de données et les données";
-$header_text_051 = "Set Up: Créer un utilisateur admin";
-$header_text_052 = "Set Up: Ajouter les infos de l'utilisateur admin";
-$header_text_053 = "Set Up: Gérer les préférences du site web";
-$header_text_054 = "Set Up: Ajouter les infos du concours";
-$header_text_055 = "Set Up: Ajouter les lieux du concours";
-$header_text_056 = "Set Up: Ajouter les lieux de dépôt des bières";
-$header_text_057 = "Set Up: Lister les styles acceptés";
-$header_text_058 = "Set Up: Configurer les préférences de jugement";
+$header_text_050 = "Installation: Installer les tables de la base de données et les données";
+$header_text_051 = "Installation: Créer un⋅e administrat⋅eur⋅rice";
+$header_text_052 = "Installation: Ajouter les infos de l'administrat⋅eur⋅rice";
+$header_text_053 = "Installation: Gérer les préférences du site web";
+$header_text_054 = "Installation: Ajouter les infos du concours";
+$header_text_055 = "Installation: Ajouter les lieux du concours";
+$header_text_056 = "Installation: Ajouter les lieux de dépôt des bières";
+$header_text_057 = "Installation: Lister les styles acceptés";
+$header_text_058 = "Installation: Configurer les préférences de jugement";
 $header_text_059 = "Importer une entrée en utilisant BeerXML";
 $header_text_060 = "Votre entrée a été enregistrée.";
 $header_text_061 = "Votre entrée a été confirmée.";
 $header_text_065 = "Toutes les entrées reçues ont été vérifiées et celles pas encore assignées à des tables ont été assignées.";
 $header_text_066 = "Infos mises à jour avec succès.";
 $header_text_067 = "Le suffixe que vous avez entré est déjà utilisé, svp choisissez en un autre.";
-$header_text_068 = "Les données de cette competition ont été nettoyées.";
+$header_text_068 = "Les données de ce concours ont été nettoyées.";
 $header_text_069 = "Archives créées avec succès. ";
-$header_text_070 = "Clicquez sur le nom d'une archive pour la voir.";
-$header_text_071 = "Pensez à mettre à jour votre ".$label_admin_comp_info." et votre ".$label_admin_judging_loc." si vous commencez une nouvelle compétition.";
+$header_text_070 = "Cliquez sur le nom d'une archive pour la voir.";
+$header_text_071 = "Pensez à mettre à jour votre ".$label_admin_comp_info." et votre ".$label_admin_judging_loc." si vous commencez un nouveau concours.";
 $header_text_072 = "Archive \"".$filter."\" effacée.";
-$header_text_073 = "Les records ont été mis à jour.";
+$header_text_073 = "Les enregistrements ont été mis à jour.";
 $header_text_074 = "Le nom d'utilisateur que vous avez entré est déjà utilisé.";
-$header_text_075 = "Ajouter un autre lieu de dépoôt?";
-$header_text_076 = "Ajouter un autre lieu de concours, date ou heure?";
+$header_text_075 = "Ajouter un autre lieu de dépôt ?";
+$header_text_076 = "Ajouter un autre lieu de concours, date ou heure ?";
 $header_text_077 = "La table qui vient d'être définie n'a pas de styles associés.";
 $header_text_078 = "Une ou plusieurs informations requises manquent - surlignées en rouge ci dessous.";
-$header_text_079 = "Les adresses mails que vous avez entré ne correspondent pas.";
-$header_text_080 = "Le numéro AHA que vous entré est déjà utilisé dans le système.";
+$header_text_079 = "Les adresses mails que vous avez entrés ne correspondent pas.";
+$header_text_080 = "Le numéro AHA que vous avez entré est déjà utilisé dans le système.";
 $header_text_081 = "Toutes les entrées ont été marquées comme payées.";
 $header_text_082 = "Toutes les entrées ont été marquées comme reçues.";
 $header_text_083 = "Toutes les entrées non confirmées sont désormais marquées comme confirmées.";
@@ -561,70 +476,70 @@ $header_text_088 = "Le juge/bénévole a été ajouté avec succès. Pensez à d
 $header_text_089 = "Le fichier a été téléchargé avec succès. Vérifiez sur la liste.";
 $header_text_090 = "Le fichier qui a essayé d'être téléchargé n'est pas dans un format de fichier accepté.";
 $header_text_091 = "Fichier(s) effacé(s) avec succès.";
-$header_text_092 = "Le mail de test a été généré. Vérifiez votre dossier spam au cas ou.";
-$header_text_093 = "Le mot de passe de l'utilisateur a été changé. Assurez vous qu'il connaisse bien leur nouveau mot de passe!";
+$header_text_092 = "Le mail de test a été envoyé. Vérifiez votre dossier spam au cas où.";
+$header_text_093 = "Le mot de passe de l'utilisat⋅eur⋅rice a été changé. Assurez vous qu'iel connaissent bien leur nouveau mot de passe !";
 $header_text_094 = "Le changement de permission en 755 du dossier user_images a échoué.";
 $header_text_095 = "Vous devrez changer la permission du dossier manuellement. Consultez votre programme FTP ou la documentation de votre ISP pour chmod (permission des dossiers).";
 $header_text_096 = "Les numéros de jugement ont été regénerés.";
 $header_text_097 = "Votre installation a été installée avec succès!";
-$header_text_098 = "POUR DES RAISONS DE SECURITE vous devriez immédiatement regler la variable &#36;setup_free_access dans config.php à FALSE.";
+$header_text_098 = "POUR DES RAISONS DE SECURITÉ vous devriez immédiatement regler la variable &#36;setup_free_access dans config.php à FALSE.";
 $header_text_099 = "Sinon votre installation et votre serveur sont vulnérables à des failles de sécurité.";
-$header_text_100 = "Connectez vous maintenant pour accèder au tableau de bord Admin";
-$header_text_101 = "Votre installation a été mise à jour avec succès!";
+$header_text_100 = "Connectez vous maintenant pour accèder au tableau de bord d'administration";
+$header_text_101 = "Votre installation a été mise à jour avec succès !";
 $header_text_102 = "Les adresses mail ne correspondent pas.";
-$header_text_103 = "SVP connectez vous pour accèder à votre compte.";
-$header_text_104 = "Voys n'avez pas accés de privilèges pour voir cette page.";
-$header_text_105 = "Des informations supplémentaires sont requises pour que votre entrées soit acceptée et confirmée.";
+$header_text_103 = "Merci de vous connecter pour accèder à votre compte.";
+$header_text_104 = "Voys n'êtes pas autorisé à voir cette page.";
+$header_text_105 = "Des informations supplémentaires sont nécessaires pour que votre entrée soit acceptée et confirmée.";
 $header_text_106 = "Voyez les endroits surlignés en ROUGE ci dessous.";
-$header_text_107 = "SVP choisissez un style.";
+$header_text_107 = "Merci de choisir un style.";
 $header_text_108 = "Cette entrée ne peut être acceptée ou confirmée tant qu'un style n'a pas été choisi. Les entrées non confirmées seront effacées du système sans avertissement préalable.";
 
 // v2.1.9
 $header_text_109 = "Vous vous êtes enregistré comme bénévole.";
-$header_text_110 = "Toutes les entrées ont été démarquées comme payées";
-$header_text_111 = "Toutes les entrées ont été démarquées comme reçues";
+$header_text_110 = "Toutes les entrées ne sont plus indiquées comme payées";
+$header_text_111 = "Toutes les entrées ne sont plus indiquées comme reçues";
 
 // -------------------- Navigation --------------------
 
 
 
-// -------------------- Alerts --------------------
+// -------------------- Alertes --------------------
 $alert_text_000 = "Faites preuve d'attention si vous donnez à des utilisateurs un accès admin et top-level.";
 $alert_text_001 = "Le nettoyage des données est complet.";
-$alert_text_002 = "La variable &#36;setup_free_access dans config.php est présentement reglée sur TRUE";
+$alert_text_002 = "La variable &#36;setup_free_access dans config.php est actuellement reglée sur TRUE";
 $alert_text_003 = "Pour des raisons de sécurité, ce réglage devrait pointer sur FALSE. Vous aurez besoin d'éditer config.php directement et de re-télécharger votre fichier sur votre serveur.";
 $alert_text_005 = "Aucun lieu de dépôt n'a été spécifié.";
-$alert_text_006 = "Ajouter un lieu de dépôt?";
+$alert_text_006 = "Ajouter un lieu de dépôt ?";
 $alert_text_008 = "Aucun lieu ou date du concours n'a été spécifié.";
-$alert_text_009 = "Ajoutez un lieu de concours?";
-$alert_text_011 = "Aucuns contacts pour le concours n'ont été spécifiés.";
-$alert_text_012 = "Ajouter un contact pour le concours?";
+$alert_text_009 = "Ajoutez un lieu de concours ?";
+$alert_text_011 = "Aucun contact pour le concours n'a été spécifié.";
+$alert_text_012 = "Ajouter un contact pour le concours ?";
 $alert_text_014 = "Votre style actuel est reglé sur le BJCP 2008.";
-$alert_text_015 = "Voulez vous convertir toutes vos entrées au BJCP 2015?";
+$alert_text_015 = "Voulez vous convertir toutes vos entrées au BJCP 2015 ?";
 $alert_text_016 = "Etes vous sur? Cette action va convertir toutes les entrées de la base pour être compatibles avec le guide BJCP 2015. Les catégories seront 1:1 quand c'est possible, toutefois des entrées de styles spéciaux devront peut-être être mises à jour par le candidat.";
 $alert_text_017 = "Pour garder la fonctionnalité la conversion doit être réalisée<em>avant</em> la définition des tables.";
 $alert_text_019 = "Toutes les entrées non confirmées ont été effacées de la base.";
-$alert_text_020 = "Les entrées non confirmées sont surlignées et anotées avec l'<span class=\"fa fa-lg fa-exclamation-triangle text-danger\"></span> icône ci dessous.";
+$alert_text_020 = "Les entrées non confirmées sont surlignées et annotées avec l'<span class=\"fa fa-lg fa-exclamation-triangle text-danger\"></span> icône ci dessous.";
 $alert_text_021 = "Les propriétaires de ces entrées doivent être contactés. Ces entrées ne sont pas inclues dans le calcul des frais.";
-$alert_text_023 = "Ajouter un lieu de dépôt?";
+$alert_text_023 = "Ajouter un lieu de dépôt ?";
 $alert_text_024 = $label_yes;
 $alert_text_025 = $label_no;
-$alert_text_027 = "L'enregistrement des entrées n'as pas encore commencé.";
-$alert_text_028 = "L'enregistrement des entrées est terminé.";
+$alert_text_027 = "Les inscriptions n'ont pas encore commencé.";
+$alert_text_028 = "Les inscriptions sont terminées.";
 $alert_text_029 = "L'ajout d'entrées n'est pas disponible.";
-$alert_text_030 = "La limite d'entrées disponibles a été atteinte.";
+$alert_text_030 = "La limite d'entrées a été atteinte.";
 $alert_text_031 = "La limite de votre nombre d'entrées a été atteinte.";
 $alert_text_032 = "Vous pourrez rajouter des entrées à compter du ".$entry_open.".";
-$alert_text_033 = "L'enregistrement des comptes commencera ".$reg_open.".";
-$alert_text_034 = "SVP revenez enregistrer votre compte.";
-$alert_text_036 = "L'enregistrement des entrées commencera ".$entry_open.".";
-$alert_text_037 = "SVP revenez à ce moment là pour ajouter vos entrées dans le système.";
-$alert_text_039 = "L'enregistrement des juges et bénévoles commencera ".$judge_open.".";
-$alert_text_040 = "SVP revenez à ce moment là pour vous enregistrer comme juge ou bénévole.";
-$alert_text_042 = "L'enregistrement des entrées a débuté!";
-$alert_text_043 = "Un total de ".$total_entries." entrées ont été ajouté au système à la date du ".$current_time.".";
-$alert_text_044 = "Les enregistrements vont fermer ";
-$alert_text_046 = "La limite du nombre d'entrées est quasiment atteinte!";
+$alert_text_033 = "Les inscriptions seront ouvertes à partir du ".$reg_open.".";
+$alert_text_034 = "Merci de revenir enregistrer votre compte.";
+$alert_text_036 = "Les inscriptions seront ouvertes à partir du ".$entry_open.".";
+$alert_text_037 = "Merci de revenir à ce moment là pour ajouter vos entrées.";
+$alert_text_039 = "Les inscriptions des juges et bénévoles commencera le ".$judge_open.".";
+$alert_text_040 = "Merci de revenir à ce moment là pour vous enregistrer comme juge ou bénévole.";
+$alert_text_042 = "Les inscriptions sont ouvertes !";
+$alert_text_043 = "Un total de ".$total_entries." entrées ont été ajoutées à la date du ".$current_time.".";
+$alert_text_044 = "Les inscriptions sont bientôt terminées ";
+$alert_text_046 = "La limite du nombre d'entrées est quasiment atteinte !";
 $alert_text_047 = $total_entries." de ".$row_limits['prefsEntryLimit']."  entrées maximales ont été ajoutées en base en date du ".$current_time.".";
 $alert_text_049 = "La limite du nombre d'entrées a été atteinte.";
 $alert_text_050 = "La limite de ".$row_limits['prefsEntryLimit']." entrées a été atteinte. Aucune autre entrée ne sera acceptée.";
@@ -634,7 +549,7 @@ $alert_text_055 = "Les enregistrements sont terminés.";
 $alert_text_056 = "Si vous avez déjà enregistré un compte,";
 $alert_text_057 = "connectez vous ici"; // lower-case and missing punctuation intentional
 $alert_text_059 = "L'enregistrement des entrées est terminé.";
-$alert_text_060 = "Un total de".$total_entries." entrées ont été ajoutées au systême.";
+$alert_text_060 = "Un total de".$total_entries." entrées ont été ajoutées.";
 $alert_text_062 = "Le dépôt des entrées est terminé.";
 $alert_text_063 = "Les bouteilles ne sont plus acceptées aux lieux de dépôt.";
 $alert_text_065 = "L'envoi des entrées est terminé.";
@@ -643,18 +558,18 @@ $alert_text_068 = $j_s_text." enregistrement ouvert.";
 $alert_text_069 = "Inscrivez vous ici"; // missing punctuation intentional
 $alert_text_070 = $j_s_text." enregistrement va se terminer ".$judge_closed.".";
 $alert_text_072 = "La limite de juges enregistrés a été atteinte.";
-$alert_text_073 = "Plus aucun enregistrement de juge sera accepté.";
+$alert_text_073 = "Plus aucun enregistrement de juge n'est accepté.";
 $alert_text_074 = "S'enregistrer comme bénévole est encore possible.";
 $alert_text_076 = "La limite de bénévoles enregistrées a été atteinte.";
 $alert_text_077 = "Plus aucun enregistrement de bénévole sera possible.";
-$alert_text_078 = "S'enregistrer comme un juge est toujours possible.";
+$alert_text_078 = "S'enregistrer en tant que juge est toujours possible.";
 $alert_text_080 = "Mot de passe incorrect.";
 $alert_text_081 = "Mot de passe accepté.";
 
-$alert_email_valid = "Format d'adresse mail valide!";
-$alert_email_not_valid = "Format d'adresse mail non valide!";
-$alert_email_in_use = "L'adresse mail que vous avez renseigné est déjà usité, merci d'en choisir une autre.";
-$alert_email_not_in_use = "Félicitations! L'adresse mail que vous avez renseigné est disponible.";
+$alert_email_valid = "Format d'adresse mail valide !";
+$alert_email_not_valid = "Format d'adresse mail non valide !";
+$alert_email_in_use = "L'adresse mail que vous avez renseigné est déjà utilisé, merci d'en choisir une autre.";
+$alert_email_not_in_use = "Félicitations ! L'adresse mail que vous avez renseigné est disponible.";
 
 // ----------------------------------------------------------------------------------
 // Public Pages
@@ -668,10 +583,10 @@ $comps_text_003 = "Il n'y a aucun concours avec des entrées se terminant dans l
 
 // -------------------- BeerXML --------------------
 
-$beerxml_text_000 = "L'importation d'entrées n'est pas accessible.";
+$beerxml_text_000 = "L'importation d'entrées n'est pas disponible.";
 $beerxml_text_001 = "a été téléchargé et la bière ajoutée a votre liste d'entrées.";
-$beerxml_text_002 = "Désolé, ce type de fichier ne peut pas être téléchargé, seulement les extensions en .xml sont autorisées.";
-$beerxml_text_003 = "La taille du fichier est au dessus de 2 Mo. Svp ajuster la taille et réessayez.";
+$beerxml_text_002 = "Désolé, ce type de fichier ne peut pas être téléchargé, uniquement les extensions en .xml sont autorisées.";
+$beerxml_text_003 = "La taille du fichier est au dessus de 2 Mo. Merci d'ajuster la taille et réessayez.";
 $beerxml_text_004 = "Fichier invalide spécifié.";
 $beerxml_text_005 = "Toutefois elle n'a pas été confirmée. Pour confirmer votre entrée accèdez à votre liste d'entrées pour obtenir de plus amples information. Ou vous pouvez ajouter une autre entrée BeerXML ci dessous.";
 $beerxml_text_006 = "La version de PHP sur votre serveur ne supporte pas l'option d'import de BeerXML.";
@@ -697,11 +612,11 @@ if ($section == "brew") {
 	$brew_text_005 = "% en alcool requis"; // missing punctuation intentional
 	$brew_text_006 = "Niveau de carbonatation requis"; // missing punctuation intentional
 	$brew_text_007 = "Niveau de sucrosité requis"; // missing punctuation intentional
-	$brew_text_008 = "Ce style requiert que vous fournissiez des informations spécifiques pour cette entrée.";
+	$brew_text_008 = "Ce style requiert que vous fournissiez des informations spécifiques.";
 	$brew_text_009 = "Prérequis pour"; // missing punctuation intentional
-	$brew_text_010 = "Ce style requiert plus d'informations. Svp entrez les dans l'endroit prévu à cet effet.";
+	$brew_text_010 = "Ce style requiert plus d'informations. Merci de les préciser aux endroits prévus à cet effet.";
 	$brew_text_011 = "Le nom de l'entrée est requis.";
-	$brew_text_012 = "***NON REQUIS*** Indiquez des infos SEULEMENT si vous souhaitez que les juges prennent en considération ce que vous écrivez ici quand ils évalueront et jugeront votre bière. A utiliser pour rentrer des détails que vous ne pouvez préciser par ailleurs (ex: technique d'empatage, variétés d'houblons, variété de miel, variété de raisin, variété de poire etc) et que vous souhaitez voir pris en compte par les juges.";
+	$brew_text_012 = "***NON REQUIS*** Indiquez des informations UNIQUEMENT si vous souhaitez que les juges prennent en considération ce que vous écrivez ici quand ils évalueront et jugeront votre bière. A utiliser pour rentrer des détails que vous ne pouvez préciser par ailleurs (ex: technique d'empatage, variétés d'houblons, variété de miel, variété de raisin, variété de poire etc) et que vous souhaitez voir pris en compte par les juges.";
 	$brew_text_013 = "NE REMPLISSEZ PAS ce champ pour spécifier des ingrédients spéciaux, un style, une couleur ou le % en alcool.";
 	$brew_text_014 = "Fournissez des infos seulement si vous voulez que les juges prennent en considération ce que vous avez spécifié au moment de leur dégustation.";
 	$brew_text_015 = "Type d'extrait de malt (ex: blond, ambré,) ou la marque.";
@@ -754,8 +669,8 @@ if ($section == "contact") {
 
 	$contact_text_000 = "Utilisez les liens suivants pour contacter les organisateurs de l'évènement:";
 	$contact_text_001 = "Utilisez le formulaire ci dessous pour contacter les organisateurs. Tous les champs marqués d'une astérisque sont requis";
-	$contact_text_002 = "En complément une copie a été envoyée a l'adresse mail que vous avez indiqué";
-	$contact_text_003 = "Voulez vous envoyer un autre message?";
+	$contact_text_002 = "Une copie a été envoyée a l'adresse mail que vous nous avez indiqué";
+	$contact_text_003 = "Voulez vous envoyer un autre message ?";
 
 }
 
@@ -764,9 +679,9 @@ if ($section == "contact") {
 if ($section == "default") {
 
 	$default_page_text_000 = "Aucun lieu pour le dépôt de bouteilles n'a été encore spécifié";
-	$default_page_text_001 = "Ajouter un leiu pour le dépôt de bouteilles?";
+	$default_page_text_001 = "Ajouter un lieu pour le dépôt de bouteilles ?";
 	$default_page_text_002 = "Aucune date ou lieu pour le concours n'a été spécifiée";
-	$default_page_text_003 = "Ajouter un lieu de concours?";
+	$default_page_text_003 = "Ajouter un lieu de concours ?";
 	$default_page_text_004 = "Entrées gagnantes";
 	$default_page_text_005 = "Les gagnants seront postés pendant ou après";
 	$default_page_text_006 = "Bienvenue";
@@ -774,7 +689,7 @@ if ($section == "default") {
 	$default_page_text_008 = "Consultez les détails de votre compte ici.";
 	$default_page_text_009 = "Gagnants 'Best of Show'";
 	$default_page_text_010 = "Entrées gagnantes";
-	$default_page_text_011 = "Bienvenue aux FDMBA IV, vous n'avez besoin d'enregistrer vos infos qu'une seule fois et pourrez retourner sur ce site pour inscrire des bières supplémentaires ou éditer vos bières déjà inscrites.";
+	$default_page_text_011 = "Vous n'avez besoin d'enregistrer vos infos qu'une seule fois et pourrez retourner sur ce site pour inscrire des bières supplémentaires ou éditer vos bières déjà inscrites.";
 	$default_page_text_012 = "Vous pouvez aussi payer vos frais d'inscriptions en ligne si vous le souhaitez";
 	$default_page_text_013 = "Organisateur du concours";
 	$default_page_text_014 = "Organisateurs du concours";
@@ -789,14 +704,14 @@ if ($section == "default") {
 	$default_page_text_023 = "organisé par";
 
 	$reg_open_text_000 = "L'inscription des juges et bénévoles est";
-	$reg_open_text_001 = "Ouvertes";
+	$reg_open_text_001 = "Ouverte";
 	$reg_open_text_002 = "Si vous <em>n'êtes pas</em> enregistré sur le site pour le concours et souhaitez devenir bénévole,";
 	$reg_open_text_003 = "enregistrez vous svp";
 	$reg_open_text_004 = "Si vous <em>avez</em> enregistré un compte, connectez vous et choisissez <em>Editer Compte</em> du menu Mon Compte indiqué par";
 	$reg_open_text_005 = "icône en haut du menu";
 	$reg_open_text_006 = "Comme vous êtes déjà enregistré vous pouvez";
 	$reg_open_text_007 = "vérifier vos infos de compte";
-	$reg_open_text_008 = "afin de vérifier si vous avez indiqué souhaiter être juge et/ou bénévole";
+	$reg_open_text_008 = "afin de vérifier si vous souhaitez être juge et/ou bénévole";
 	$reg_open_text_009 = "Si vous souhaitez être juge ou bénévole, merci de retourner vous enregistrer";
 	$reg_open_text_010 = "Les inscriptions des bières sont";
 	$reg_open_text_011 = "Pour ajouter vos entrées dans le système";
@@ -805,9 +720,9 @@ if ($section == "default") {
 	$reg_open_text_014 = "utilisez le formulaire d'ajout d'entrée";
 
 	// v2.1.9
-	$reg_open_text_015 = "Les inscriptions des juges sont:";
-	$reg_open_text_016 = "Les inscriptions des bénévoles sont:";
-	$reg_closed_text_000 = "Merci et bonne chance à tous ceux qui ont inscrit";
+	$reg_open_text_015 = "Les inscriptions des juges sont :";
+	$reg_open_text_016 = "Les inscriptions des bénévoles sont :";
+	$reg_closed_text_000 = "Merci et bonne chance !";
 	$reg_closed_text_001 = "Il y a";
 	$reg_closed_text_002 = "participants, juges et bénévoles inscrits";
 	$reg_closed_text_003 = "bières inscrites et";
