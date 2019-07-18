@@ -704,7 +704,7 @@ if ($section == "default") {
 	$default_page_text_023 = "organisé par";
 
 	$reg_open_text_000 = "L'inscription des juges et bénévoles est";
-	$reg_open_text_001 = "Ouverte";
+	$reg_open_text_001 = "ouvertes";
 	$reg_open_text_002 = "Si vous <em>n'êtes pas</em> enregistré sur le site pour le concours et souhaitez devenir bénévole,";
 	$reg_open_text_003 = "enregistrez vous svp";
 	$reg_open_text_004 = "Si vous <em>avez</em> enregistré un compte, connectez vous et choisissez <em>Editer Compte</em> du menu Mon Compte indiqué par";
@@ -713,9 +713,9 @@ if ($section == "default") {
 	$reg_open_text_007 = "vérifier vos infos de compte";
 	$reg_open_text_008 = "afin de vérifier si vous souhaitez être juge et/ou bénévole";
 	$reg_open_text_009 = "Si vous souhaitez être juge ou bénévole, merci de retourner vous enregistrer";
-	$reg_open_text_010 = "Les inscriptions des bières sont";
-	$reg_open_text_011 = "Pour ajouter vos entrées dans le système";
-	$reg_open_text_012 = "merci de procéder au processus d'enregistrement";
+	$reg_open_text_010 = "Les inscriptions pour les bières sont";
+	$reg_open_text_011 = "Pour participer";
+	$reg_open_text_012 = "merci de vous enregistrer";
 	$reg_open_text_013 = "si vous avez déjà un compte.";
 	$reg_open_text_014 = "utilisez le formulaire d'ajout d'entrée";
 
