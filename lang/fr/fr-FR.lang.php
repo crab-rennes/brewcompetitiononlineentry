@@ -41,7 +41,7 @@ if (strpos($section, "step") === FALSE) {
 	if ((isset($judge_limit)) && (isset($steward_limit))) {
 		if (($judge_limit) && (!$steward_limit)) $j_s_text = "Bénévole"; // missing punctuation intentional
 		elseif ((!$judge_limit) && ($steward_limit)) $j_s_text = "Juge"; // missing punctuation intentional
-		else $j_s_text = "Juge ou bénévole"; // missing punctuation intentional
+		else $j_s_text = "juges et bénévoles"; // missing punctuation intentional
 	}
 }
 
@@ -195,7 +195,7 @@ $label_phone = "Téléphone";
 $label_phone_primary = "Téléphone principal";
 $label_phone_secondary = "Téléphone optionnel";
 $label_drop_off = "Lieu pour déposer";
-$label_drop_offs = "Lieux pour déposer";
+$label_drop_offs = "Points de dépot pour les bouteilles";
 $label_club = "Association ou Club";
 $label_aha_number = "Pseudo";
 $label_org_notes = "Notes pour les organisateurs";
@@ -958,7 +958,7 @@ $sidebar_text_018 = "disponibles avant d'atteindre la limite de ";
 $sidebar_text_019 = "par participant";
 $sidebar_text_020 = "Vous avez atteint la limite de ";
 $sidebar_text_021 = "dans ce concours";
-$sidebar_text_022 = "Les bouteilles du concours sont acceptés chez";
+$sidebar_text_022 = "Il est possible de déposer des bouteilles.";
 $sidebar_text_023 = "le lieu d'envoi";
 $sidebar_text_024 = "Les dates du concours n'ont pas encore été décidées. Merci de revérifier plus tard";
 $sidebar_text_025 = "ont été ajoutées en base à la date du";
