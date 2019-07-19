@@ -804,17 +804,17 @@ if (($section == "liste") || ($section == "compte") || ($go == "entrées")) {
 	$brewer_entries_text_001 = "Vous avez des entrées non confirmées.";
 	$brewer_entries_text_002 = "Pour chaque entrée ci dessous avec une <span class=\"fa fa-lg fa-exclamation-circle text-danger\"></span> icone, cliquez sur <span class=\"fa fa-lg fa-pencil text-primary\"></span> l'icone pour vérifier et confirmer toutes les données inhérentes à vos entrées. Les entrées non confirmées seront effacées de la base de données sans avertissement.";
 	$brewer_entries_text_003 = "Vous ne POUVEZ pas payer pour vos entrées tant que toutes vos entrées ne sont pas encore confirmées.";
-	$brewer_entries_text_004 = "Vous avez des entrées qui nécessite de definir un type spécifique, des ingrédients spéciaux, un style classique, % ABV, et/ou couleur.";
+	$brewer_entries_text_004 = "Vous avez des entrées qui nécessite de definir un type spécifique, des ingrédients spéciaux, un style classique, % ABV, et/ou une couleur.";
 	$brewer_entries_text_005 = "Pour chaque entrée ci dessous avec l'icône <span class=\"fa fa-lg fa-exclamation-circle text-danger\"></span>, cliquez sur l'icône <span class=\"fa fa-lg fa-pencil text-primary\"></span> pour entrer l'information requise. Les entrées sans un style spécifique, des ingrédients spéciaux, un style classique, %, et/ou la couleur dans les catégories qui les requièrent peuvent être effacées du système sans avertissement préalable.";
 	$brewer_entries_text_006 = "Téléchargez les feuilles de notes des juges &rsquo; pour";
 	$brewer_entries_text_007 = "Style NON entré";
 	$brewer_entries_text_008 = "Formulaire d'entrée et";
 	$brewer_entries_text_009 = "Etiquettes des bouteilles";
-	$brewer_entries_text_010 = "Imprimez votre recette pour";
-	$brewer_entries_text_011 = "Aussi, vous ne pourrez pas ajouter d'entrée supplémentaire car la limite d'entrées pour la compétition a été atteinte. Cliquez sur annuler et ensuite éditez votre entrée si vous souhaitez la garder.";
+	$brewer_entries_text_010 = "Imprimez votre fiche de recette pour";
+	$brewer_entries_text_011 = "De plus, vous ne pourrez pas ajouter d'entrée supplémentaire car la limite d'entrées pour la compétition a été atteinte. Cliquez sur annuler et ensuite éditez votre entrée si vous souhaitez la garder.";
 	$brewer_entries_text_012 = "Etes vous sur que vous voulez effacer l'entrée appelée";
 	$brewer_entries_text_013 = "Vous pourrez ajouter des entrées à partir du ou après ";
-	$brewer_entries_text_014 = "Vous n'avez pas aj outé d'entrées dans le système.";
+	$brewer_entries_text_014 = "Vous n'avez pas ajouté d'entrées dans le système.";
 	$brewer_entries_text_015 = "Vous ne pouvez pas effacer votre entrée maintenant.";
 
 }
@@ -828,7 +828,7 @@ if ($section == "gagnants précédents") {
 
 // -------------------- Pay for Entries --------------------
 
-$pay_text_000 = "la fenêtre de paiement est terminée.";
+$pay_text_000 = "Les dates limites pour l'inscription, les dépôts, et les envois étant passées, la fenêtre de paiement est terminée.";
 $pay_text_001 = "Contactez un organisateur si vous avez des questions.";
 $pay_text_002 = "voici vos options pour payer vos droits d'entrée.";
 $pay_text_003 = "Les frais sont de";
@@ -845,7 +845,7 @@ $pay_text_013 = "Attachez un chèque pour la totalité de vos entrées à une de
 $pay_text_014 = "Votre récépissé de chèque sera votre reçu.";
 $pay_text_015 = "Attachez votre paiment en liquide pour la totalité de vos entrées à l'une de vos bouteilles dans une <em>enveloppe cachetée</em>.";
 $pay_text_016 = "Vos feuilles de notes retournées feront office de reçu.";
-$pay_text_017 = "Votre confirmation de paiement est votre reçu. Joigez une copie avec vos entrées comme preuve de paiement.";
+$pay_text_017 = "Votre confirmation de paiement est votre reçu. Joignez une copie avec vos entrées comme preuve de paiement.";
 $pay_text_018 = "Cliquez sur <em>Payer avec PayPal</em> ci dessous pour payer en ligne.";
 $pay_text_019 = "SVP notez qu'il y aura des frais sur la transaction de";
 $pay_text_020 = "sera ajouté à votre total.";
